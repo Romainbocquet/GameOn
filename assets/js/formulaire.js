@@ -1,4 +1,4 @@
-//creation d'une classe contenant les values des champs de formulaire
+//creation d'une classe contenant les champs de formulaire
 class Formulaire {
   constructor(inputAccepte, localisation1,
     localisation2, localisation3, localisation4, localisation5, localisation6) {
@@ -31,7 +31,7 @@ class Formulaire {
     this.locationRequired();
     this.checkLocation();
 
-    //mettre les valeurs des champs de formulaire dans le local storage
+    //tester les champs et envoyer le formulaire si tout les champs sont correctement replis
     if (this.controleText(this.inputNom, regExNomPrenom) &&
       this.controleText(this.inputPrenom, regExNomPrenom) &&
       this.controleText(this.inputEmail, regExMail) &&
@@ -44,7 +44,6 @@ class Formulaire {
       return true;
     }
     else {
-      console.log("pb");
       return false;
     }
   }
