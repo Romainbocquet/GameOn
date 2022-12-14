@@ -22,6 +22,7 @@ class Formulaire {
     const regExMail = (value) => {
       return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value);
     }
+    
 
     this.controleText(this.inputPrenom, regExNomPrenom);
     this.controleText(this.inputNom, regExNomPrenom);
