@@ -38,11 +38,15 @@ cloteBtn.forEach((cloteBtn) => cloteBtn.addEventListener("click", closeModal));
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
+  document.querySelector('.hero-section').classList.add("mobileHide");
+  document.querySelector('footer').classList.add("mobileHide");
 }
 
 //close modal form
 function closeModal() {
   modalbg.style.display = "none";
+  document.querySelector('.hero-section').classList.remove("mobileHide");
+  document.querySelector('footer').classList.remove("mobileHide");
 }
 
 const burger = document.querySelector('#openNav');

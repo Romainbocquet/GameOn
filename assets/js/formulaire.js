@@ -40,8 +40,8 @@ class Formulaire {
       this.checkBoxRequired(this.inputAccepte) &&
       this.locationRequired() &&
       this.locationRequired()) {
-      document.querySelector('.insc-valide').style.display = "block";
-      document.querySelector('.bground').style.display = "none";
+      document.querySelector('form').style.display = "none";
+      document.querySelector('.confirmation').style.display = "block";
       return true;
     }
     else {

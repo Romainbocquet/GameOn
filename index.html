@@ -28,7 +28,6 @@
       </a>
     </div>
   </div>
-  <div class="insc-valide"><i class="fa-solid fa-check"></i>Votre inscrition est validé !</div>
   <main>
     <div class="hero-section">
       <div class="hero-content">
@@ -54,7 +53,7 @@
 
     <div class="bground">
       <div class="content">
-        <span class="close"></span>
+        <span class="close" id="close-cross"></span>
         <div class="modal-body">
           <form name="reserve" action="index.html" method="get" id="form">
             <div class="formData" data-error="Prénom incorrect" data-error-visible="false">
@@ -124,6 +123,10 @@
             <input class="btn-submit button" type="submit" value="C'est parti"> <br>
             <p id="obligatoire">* Champs obligatoire</p>
           </form>
+          <div class="confirmation">
+            <h1>Merci pour votre inscription</h1>
+            <input class="btn-submit button close" type="submit" value="Fermer">
+          </div>
         </div>
       </div>
     </div>
